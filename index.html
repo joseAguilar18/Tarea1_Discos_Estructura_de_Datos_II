@@ -19,30 +19,61 @@
 
             <section class="calculator-wrapper">
                 <div class="calculator-title">
-                    <h3>Calculadora de Direccion Fisica de un Bloque</h3>
+                    <h3>Calculadora del numero de bloque de una Direccion Fisica</h3>
                 </div>
                 <div class="calculator-inputs-container">
                     <h5>Introduzca los datos requeridos</h5>
                     <div class="data-container">
                         <div class="data-input">
                             <label for="clilindro" class="labels">Numero de Cilindro: </label>
-                            <input type="text" name="clilindro" class="inputs">
+                            <input type="number" name="clilindro" id="cilindroP" class="inputs">
                         </div>
                         <div class="data-input">
                             <label for="pista" class="labels">Numero de Pista: </label>
-                            <input type="text" name="pista" class="inputs">
+                            <input type="number" name="pista" id="pistaP"class="inputs">
                         </div>
                         <div class="data-input">
                             <label for="sector" class="labels">Numero de Sector: </label>
-                            <input type="text" name="sector" class="inputs">
+                            <input type="number" name="sector" id="sectorP" class="inputs">
                         </div>
                         <div class="data-input">
                             <label for="pista/cil" class="labels">Numero de Pistas por Clilindro: </label>
-                            <input type="text" name="pista/cil" class="inputs">
-                        </div><div class="data-input">
-                            <label for="sector/pista" class="labels">Numero de Sectores por Pista: </label>
-                            <input type="text" name="sector/pista" class="inputs">
+                            <input type="number" name="pista/cil" id="pista-cil" class="inputs">
                         </div>
+                        <div class="data-input">
+                            <label for="sector/pista" class="labels">Numero de Sectores por Pista: </label>
+                            <input typnumber" name="sector/pista" id="sector-pista" class="inputs">
+                        </div>
+
+                        <button id="block-number-button" class="button">Calcular Dirección</button>
+                    </div>
+                </div>
+                <div class="calculator-result-container">
+                    <p>La dirección fisica del bloque es: </p>
+                    <p class="calculator-result" id="block-number-result">(20,400,10)</p>
+                </div>
+            </section>
+
+            <section class="calculator-wrapper">
+                <div class="calculator-title">
+                    <h3>Calculadora de la Dirección Fisica de un Bloque</h3>
+                </div>
+                <div class="calculator-inputs-container">
+                    <h5>Introduzca los datos requeridos</h5>
+                    <div class="data-container">
+                        <div class="data-input">
+                            <label for="dir-fisica" class="labels">Direccion Fisica de Bloque: </label>
+                            <input type="number" name="dir-fisica" id="dir-fisica" class="inputs">
+                        </div>
+                        <div class="data-input">
+                            <label for="pista/cil" class="labels">Numero de Pistas por Clilindro: </label>
+                            <input type="number" name="pista/cil" id="pista-cil-F" class="inputs">
+                        </div>
+                        <div class="data-input">
+                            <label for="sector/pista" class="labels">Numero de Sectores por Pista: </label>
+                            <input typnumber" name="sector/pista" id="sector-pista-F" class="inputs">
+                        </div>
+                        <button id="physical-direction-button" class="button">Calcular Dirección</button>
                     </div>
                 </div>
                 <div class="calculator-result-container">
@@ -50,14 +81,9 @@
                     <p class="calculator-result" id="physical-direction-result">(20,400,10)</p>
                 </div>
             </section>
-
-            <section class="calculator-wrapper">
-                <div class="calculator-title">
-                    <h3>Calculadora de la Dirección del numero de Bloque</h3>
-                </div>
-                <div></div>
-            </section>
         </section>
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
